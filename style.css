@@ -1,0 +1,301 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    margin: 10px 0 0;
+    font-size: 3em;
+    letter-spacing: 2px;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background: #333;
+    padding: 10px 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff416c;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+#features, #how-it-works, #testimonials, #cta {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+#features {
+    background-color: #fff;
+}
+
+h2 {
+    color: #ff4b2b;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+}
+
+ul li, ol li {
+    background: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+ul li:hover, ol li:hover {
+    transform: translateY(-5px);
+}
+
+ul li strong, ol li strong {
+    color: #ff416c;
+}
+
+.testimonial {
+    background: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.testimonial p {
+    margin: 0;
+}
+
+.testimonial p:last-child {
+    text-align: right;
+    margin-top: 10px;
+    color: #ff416c;
+    font-weight: bold;
+}
+
+#cta {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+}
+
+#cta h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+#cta p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.download-buttons a {
+    display: inline-block;
+    margin: 10px 15px;
+    padding: 15px 30px;
+    background: white;
+    color: #0072ff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.download-buttons a:hover {
+    background: #0072ff;
+    color: white;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    border-top: 5px solid #ff416c;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer .social-media a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+footer .social-media a:hover {
+    color: #ff416c;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .container {
+        width: 90%;
+        padding: 10px 0;
+    }
+
+    #features, #how-it-works, #testimonials, #cta {
+        padding: 30px 0;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    ul li, ol li {
+        margin: 10px 0;
+        padding: 15px;
+    }
+
+    .testimonial {
+        margin: 10px 0;
+        padding: 15px;
+    }
+
+    #cta h2 {
+        font-size: 2em;
+    }
+
+    #cta p {
+        font-size: 1em;
+    }
+
+    .download-buttons a {
+        padding: 10px 20px;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+
+    footer .social-media a {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 0.9em;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        padding: 5px 0;
+    }
+
+    .nav-links li {
+        margin: 5px 0;
+    }
+
+    .container {
+        width: 95%;
+        padding: 10px 0;
+    }
+
+    #features, #how-it-works, #testimonials, #cta {
+        padding: 20px 0;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    ul li, ol li {
+        margin: 5px 0;
+        padding: 10px;
+    }
+
+    .testimonial {
+        margin: 5px 0;
+        padding: 10px;
+    }
+
+    #cta h2 {
+        font-size: 1.8em;
+    }
+
+    #cta p {
+        font-size: 0.9em;
+    }
+
+    .download-buttons a {
+        padding: 10px 15px;
+    }
+
+    footer p {
+        font-size: 0.8em;
+    }
+
+    footer .social-media a {
+        font-size: 1em;
+    }
+}
